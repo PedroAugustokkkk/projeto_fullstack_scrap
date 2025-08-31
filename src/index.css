@@ -8,7 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    /* SCRAP Brand Colors */
+    --background: 57 89% 89%; /* Cream base */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -17,24 +18,47 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Bright Magenta */
+    --primary: 295 95% 68%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Olive */
+    --secondary: 56 28% 58%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Light versions */
+    --muted: 57 89% 95%;
+    --muted-foreground: 56 15% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Lavender */
+    --accent: 248 100% 88%;
+    --accent-foreground: 295 95% 68%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 248 50% 92%;
+    --input: 248 50% 92%;
+    --ring: 295 95% 68%;
+
+    /* Custom SCRAP Design Tokens */
+    --cream: 57 89% 89%;
+    --olive: 56 28% 58%;
+    --lavender: 248 100% 88%;
+    --magenta: 295 95% 68%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--magenta)), hsl(var(--lavender)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--olive)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--magenta)) 0%, hsl(var(--lavender)) 50%, hsl(var(--cream)) 100%);
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--magenta) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(var(--magenta) / 0.2);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.5rem;
 
@@ -101,5 +125,103 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Hero Button Variants */
+  .btn-hero {
+    @apply bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold py-3 px-8 rounded-xl shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl;
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .btn-secondary-hero {
+    @apply bg-white/20 backdrop-blur-sm text-foreground font-semibold py-3 px-8 rounded-xl border border-white/30 transition-all duration-300 hover:bg-white/30 hover:scale-105;
+  }
+  
+  /* Card Animations */
+  .card-hover {
+    @apply transition-all duration-300 hover:scale-105 hover:-translate-y-2;
+    box-shadow: var(--shadow-card);
+  }
+  
+  .card-hover:hover {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  /* Gradient Backgrounds */
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .gradient-secondary {
+    background: var(--gradient-secondary);
+  }
+  
+  /* Text Animations */
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+  
+  .animate-bounce-in {
+    animation: bounceIn 0.8s ease-out forwards;
+  }
+  
+  /* Floating Animation */
+  .float {
+    animation: float 3s ease-in-out infinite;
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+  
+  .transition-bounce {
+    transition: var(--transition-bounce);
+  }
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  70% {
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
