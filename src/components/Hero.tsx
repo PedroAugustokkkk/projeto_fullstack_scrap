@@ -24,11 +24,11 @@ const Hero = () => {
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-up">
             <span className="text-white">Rent</span>{" "}
-            <span className="bg-gradient-to-r from-white to-cream bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-white to-warm-cream bg-clip-text text-transparent">
               Anything
             </span>
             <br />
-            <span className="bg-gradient-to-r from-cream to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-warm-cream to-white bg-clip-text text-transparent">
               From Anyone
             </span>
           </h1>

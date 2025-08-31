@@ -7,49 +7,49 @@ const Categories = () => {
       icon: Camera,
       name: "Photography",
       count: "2.5K+ items",
-      color: "from-magenta to-lavender"
+      color: "from-bright-blue to-light-blue"
     },
     {
       icon: Wrench,
       name: "Tools & Equipment",
       count: "3.2K+ items",
-      color: "from-olive to-cream"
+      color: "from-burgundy to-blue-gray"
     },
     {
       icon: Tent,
       name: "Outdoor & Camping",
       count: "1.8K+ items",
-      color: "from-lavender to-magenta"
+      color: "from-light-blue to-bright-blue"
     },
     {
       icon: Music,
       name: "Party & Events",
       count: "1.5K+ items",
-      color: "from-cream to-olive"
+      color: "from-warm-cream to-burgundy"
     },
     {
       icon: Bike,
       name: "Sports & Recreation",
       count: "2.1K+ items",
-      color: "from-magenta to-cream"
+      color: "from-bright-blue to-warm-cream"
     },
     {
       icon: Laptop,
       name: "Electronics",
       count: "1.9K+ items",
-      color: "from-olive to-lavender"
+      color: "from-burgundy to-light-blue"
     },
     {
       icon: Car,
       name: "Vehicles",
       count: "800+ items",
-      color: "from-lavender to-cream"
+      color: "from-light-blue to-warm-cream"
     },
     {
       icon: Home,
       name: "Home & Garden",
       count: "2.8K+ items",
-      color: "from-cream to-magenta"
+      color: "from-warm-cream to-bright-blue"
     }
   ];
 

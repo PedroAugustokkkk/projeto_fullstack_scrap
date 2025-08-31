@@ -8,8 +8,8 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* SCRAP Brand Colors */
-    --background: 57 89% 89%; /* Cream base */
+    /* SCRAP Brand Colors - Updated Palette */
+    --background: 46 29% 88%; /* Warm cream base */
     --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
@@ -18,43 +18,44 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    /* Primary: Bright Magenta */
-    --primary: 295 95% 68%;
+    /* Primary: Bright Blue */
+    --primary: 218 82% 58%;
     --primary-foreground: 0 0% 100%;
 
-    /* Secondary: Olive */
-    --secondary: 56 28% 58%;
+    /* Secondary: Deep Red */
+    --secondary: 343 49% 42%;
     --secondary-foreground: 0 0% 100%;
 
-    /* Muted: Light versions */
-    --muted: 57 89% 95%;
-    --muted-foreground: 56 15% 45%;
+    /* Muted: Blue-gray versions */
+    --muted: 224 19% 85%;
+    --muted-foreground: 224 19% 45%;
 
-    /* Accent: Lavender */
-    --accent: 248 100% 88%;
-    --accent-foreground: 295 95% 68%;
+    /* Accent: Light Blue */
+    --accent: 213 75% 86%;
+    --accent-foreground: 218 82% 58%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 248 50% 92%;
-    --input: 248 50% 92%;
-    --ring: 295 95% 68%;
+    --border: 213 75% 90%;
+    --input: 213 75% 90%;
+    --ring: 218 82% 58%;
 
     /* Custom SCRAP Design Tokens */
-    --cream: 57 89% 89%;
-    --olive: 56 28% 58%;
-    --lavender: 248 100% 88%;
-    --magenta: 295 95% 68%;
+    --burgundy: 343 49% 42%;
+    --bright-blue: 218 82% 58%;
+    --warm-cream: 46 29% 88%;
+    --light-blue: 213 75% 86%;
+    --blue-gray: 224 19% 61%;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--magenta)), hsl(var(--lavender)));
-    --gradient-secondary: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--olive)));
-    --gradient-hero: linear-gradient(135deg, hsl(var(--magenta)) 0%, hsl(var(--lavender)) 50%, hsl(var(--cream)) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(var(--bright-blue)), hsl(var(--light-blue)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--burgundy)), hsl(var(--blue-gray)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bright-blue)) 0%, hsl(var(--light-blue)) 50%, hsl(var(--warm-cream)) 100%);
     
     /* Shadows */
-    --shadow-glow: 0 0 40px hsl(var(--magenta) / 0.3);
-    --shadow-card: 0 10px 30px -10px hsl(var(--magenta) / 0.2);
+    --shadow-glow: 0 0 40px hsl(var(--bright-blue) / 0.3);
+    --shadow-card: 0 10px 30px -10px hsl(var(--bright-blue) / 0.2);
     
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

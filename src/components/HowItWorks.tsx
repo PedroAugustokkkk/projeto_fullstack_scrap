@@ -34,7 +34,7 @@ const HowItWorks = () => {
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-10 left-10 w-32 h-32 bg-primary rounded-full"></div>
         <div className="absolute bottom-20 right-20 w-24 h-24 bg-accent rounded-full"></div>
-        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-magenta rounded-full"></div>
+        <div className="absolute top-1/2 left-1/3 w-16 h-16 bg-bright-blue rounded-full"></div>
       </div>
 
       <div className="container mx-auto px-4 relative z-10">
@@ -86,8 +86,8 @@ const HowItWorks = () => {
           <div className="inline-flex items-center space-x-4 bg-card p-6 rounded-2xl shadow-card">
             <div className="flex -space-x-2">
               <div className="w-10 h-10 bg-gradient-to-br from-primary to-accent rounded-full border-2 border-white"></div>
-              <div className="w-10 h-10 bg-gradient-to-br from-accent to-magenta rounded-full border-2 border-white"></div>
-              <div className="w-10 h-10 bg-gradient-to-br from-magenta to-primary rounded-full border-2 border-white"></div>
+              <div className="w-10 h-10 bg-gradient-to-br from-accent to-burgundy rounded-full border-2 border-white"></div>
+              <div className="w-10 h-10 bg-gradient-to-br from-burgundy to-primary rounded-full border-2 border-white"></div>
             </div>
             <div className="text-left">
               <p className="font-semibold text-foreground">Join 15,000+ happy renters</p>

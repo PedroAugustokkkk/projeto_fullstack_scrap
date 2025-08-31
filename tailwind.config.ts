@@ -63,10 +63,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				// SCRAP Custom Colors
-				cream: 'hsl(var(--cream))',
-				olive: 'hsl(var(--olive))',
-				lavender: 'hsl(var(--lavender))',
-				magenta: 'hsl(var(--magenta))'
+				burgundy: 'hsl(var(--burgundy))',
+				'bright-blue': 'hsl(var(--bright-blue))',
+				'warm-cream': 'hsl(var(--warm-cream))',
+				'light-blue': 'hsl(var(--light-blue))',
+				'blue-gray': 'hsl(var(--blue-gray))'
 			},
 			backgroundImage: {
 				'gradient-hero': 'var(--gradient-hero)',
