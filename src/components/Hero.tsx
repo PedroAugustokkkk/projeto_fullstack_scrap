@@ -17,52 +17,52 @@ const Hero = () => {
           {/* Badge */}
           <div className="inline-flex items-center space-x-2 bg-white/20 backdrop-blur-sm rounded-full px-6 py-2 mb-8 animate-bounce-in">
             <Sparkles className="h-4 w-4 text-white" />
-            <span className="text-white font-medium">Rent Everything, Own Nothing</span>
+            <span className="text-white font-medium">Alugue tudo, Não tenha nada</span>
             <Zap className="h-4 w-4 text-white" />
           </div>
 
           {/* Main Heading */}
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-up">
-            <span className="text-white">Rent</span>{" "}
+            <span className="text-white">Alugue</span>{" "}
             <span className="bg-gradient-to-r from-white to-warm-cream bg-clip-text text-transparent">
-              Anything
+              Tudo
             </span>
             <br />
             <span className="bg-gradient-to-r from-warm-cream to-white bg-clip-text text-transparent">
-              From Anyone
+              De Qualquer Pessoa
             </span>
           </h1>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl mx-auto leading-relaxed animate-fade-up" style={{ animationDelay: '0.2s' }}>
-            Join thousands of people sharing and renting items in their community. 
-            From cameras to camping gear, power tools to party supplies – SCRAP has it all.
+            Junte-se a milhares de pessoas que compartilham e alugam itens em suas comunidades.
+            De câmeras a equipamentos de camping, ferramentas elétricas a artigos para festas – a SCRAP tem de tudo.
           </p>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
             <Button className="btn-hero text-lg px-8 py-4 h-auto">
-              Start Renting
+              Começe a Alugar
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <Button className="btn-secondary-hero text-lg px-8 py-4 h-auto">
-              List Your Items
+              Liste Os Seus Itens
             </Button>
           </div>
 
           {/* Stats */}
           <div className="grid grid-cols-3 gap-8 mt-16 animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">50K+</div>
-              <div className="text-white/80">Items Available</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">0</div>
+              <div className="text-white/80">Itens Disponíveis</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">15K+</div>
-              <div className="text-white/80">Happy Renters</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">0</div>
+              <div className="text-white/80">Locatários(as) Felizes</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-bold text-white mb-2">200+</div>
-              <div className="text-white/80">Cities</div>
+              <div className="text-3xl md:text-4xl font-bold text-white mb-2">1</div>
+              <div className="text-white/80">Cidade</div>
             </div>
           </div>
         </div>

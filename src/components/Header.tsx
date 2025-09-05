@@ -22,7 +22,7 @@ const Header = () => {
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground h-4 w-4" />
               <input
                 type="text"
-                placeholder="Search for items to rent..."
+                placeholder="Procure por itens para alugar... "
                 className="w-full pl-10 pr-4 py-2 border border-border rounded-full bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
               />
             </div>
@@ -30,9 +30,9 @@ const Header = () => {
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Rent Out</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Categories</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">How it Works</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors">Alugar</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors">Categorias</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors">Como funciona</a>
           </nav>
 
           {/* Actions */}
@@ -44,7 +44,7 @@ const Header = () => {
               <User className="h-5 w-5" />
             </Button>
             <Button className="btn-hero hidden md:inline-flex">
-              Start Renting
+              Começe a alugar
             </Button>
             <Button variant="ghost" size="icon" className="lg:hidden">
               <Menu className="h-5 w-5" />

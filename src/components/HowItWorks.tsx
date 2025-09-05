@@ -4,26 +4,26 @@ const HowItWorks = () => {
   const steps = [
     {
       icon: Search,
-      title: "Browse & Search",
-      description: "Find exactly what you need from thousands of items in your area. Use filters to narrow down your options.",
+      title: "Navegue & Encontre",
+      description: "Encontre o item perfeito para alugar usando nossa barra de pesquisa fácil de usar e filtros detalhados.",
       step: "01"
     },
     {
       icon: MessageCircle,
-      title: "Connect & Chat",
-      description: "Message the owner directly to ask questions, check availability, and arrange pickup details.",
+      title: "Conecte-se & Converse",
+      description: "Mande uma mensagem ao proprietário para verificar a disponibilidade, fazer perguntas e combinar os detalhes do aluguel.",
       step: "02"
     },
     {
       icon: HandHeart,
-      title: "Rent & Enjoy",
-      description: "Pick up your item, enjoy using it, and return it on time. Rate your experience to help the community.",
+      title: "Alugue & Divirta-se",
+      description: "Pegue o item, aproveite seu uso e devolva-o no prazo combinado para manter a comunidade feliz.",
       step: "03"
     },
     {
       icon: Shield,
-      title: "Protected & Insured",
-      description: "All rentals are covered by our protection plan. Rent with confidence knowing you're covered.",
+      title: "Protegido e Segurado",
+      description: "Todos os aluguéis são protegidos por nossa garantia de seguro (Contratos Inteligentes), garantindo tranquilidade para você e o proprietário.",
       step: "04"
     }
   ];
@@ -41,10 +41,10 @@ const HowItWorks = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            How SCRAP Works
+            Como a SCRAP Funciona
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Renting is simple, safe, and sustainable. Here's how it works in 4 easy steps.
+            Alugar itens nunca foi tão fácil. Siga estes simples passos para começar a compartilhar e economizar hoje mesmo.
           </p>
         </div>
 
@@ -90,8 +90,8 @@ const HowItWorks = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-burgundy to-primary rounded-full border-2 border-white"></div>
             </div>
             <div className="text-left">
-              <p className="font-semibold text-foreground">Join 15,000+ happy renters</p>
-              <p className="text-sm text-muted-foreground">Start renting today - it's free to join!</p>
+              <p className="font-semibold text-foreground">Junte-se a mais de 1 inquilino satisfeito</p>
+              <p className="text-sm text-muted-foreground">Comece a alugar hoje mesmo - a inscrição é gratuita!</p>
             </div>
           </div>
         </div>

@@ -5,50 +5,50 @@ const Categories = () => {
   const categories = [
     {
       icon: Camera,
-      name: "Photography",
-      count: "2.5K+ items",
+      name: "Fotografia",
+      count: "1 item",
       color: "from-bright-blue to-light-blue"
     },
     {
       icon: Wrench,
-      name: "Tools & Equipment",
-      count: "3.2K+ items",
+      name: "Ferramentas e Equipamentos",
+      count: "1 item",
       color: "from-burgundy to-blue-gray"
     },
     {
       icon: Tent,
-      name: "Outdoor & Camping",
-      count: "1.8K+ items",
+      name: "Ar-Livre e Acampamento",
+      count: "1 item",
       color: "from-light-blue to-bright-blue"
     },
     {
       icon: Music,
-      name: "Party & Events",
-      count: "1.5K+ items",
+      name: "Festa & Eventos",
+      count: "1 item",
       color: "from-warm-cream to-burgundy"
     },
     {
       icon: Bike,
-      name: "Sports & Recreation",
-      count: "2.1K+ items",
+      name: "Esportes e Recreação",
+      count: "1 item",
       color: "from-bright-blue to-warm-cream"
     },
     {
       icon: Laptop,
-      name: "Electronics",
-      count: "1.9K+ items",
+      name: "Eletrônicos",
+      count: "1 item",
       color: "from-burgundy to-light-blue"
     },
     {
       icon: Car,
-      name: "Vehicles",
-      count: "800+ items",
+      name: "Veículos",
+      count: "1 item",
       color: "from-light-blue to-warm-cream"
     },
     {
       icon: Home,
-      name: "Home & Garden",
-      count: "2.8K+ items",
+      name: "Casa e Jardim",
+      count: "1 item",
       color: "from-warm-cream to-bright-blue"
     }
   ];
@@ -59,10 +59,10 @@ const Categories = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Browse Categories
+            Navegue Por Categorias
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Find exactly what you need from our diverse range of rental categories
+            Encontre rapidamente o que você precisa navegando por nossas categorias populares.
           </p>
         </div>
 
@@ -90,13 +90,13 @@ const Categories = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-primary rounded-3xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              Can't find what you're looking for?
+              Não encontrou o que procurava?
             </h3>
             <p className="text-lg mb-6 opacity-90">
-              Post a request and let the community know what you need!
+              Publique uma solicitação e deixe a comunidade ajudar você a encontrar o item perfeito.
             </p>
             <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full hover:bg-white/90 transition-colors">
-              Post a Request
+              Poste Um Pedido
             </button>
           </div>
         </div>

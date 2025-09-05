@@ -16,8 +16,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
-              The sustainable marketplace for renting anything you need from your community. 
-              Reduce waste, save money, and connect with your neighbors.
+              Um marketplace sustentável para alugar itens, economizar dinheiro e reduzir o desperdício.
             </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-muted/20 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors cursor-pointer">
@@ -34,42 +33,42 @@ const Footer = () => {
 
           {/* Links */}
           <div>
-            <h4 className="font-semibold text-foreground mb-4">For Renters</h4>
+            <h4 className="font-semibold text-foreground mb-4">Para Locatários(as)</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Browse Items</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">How to Rent</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Safety Tips</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Insurance</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Navegue Pelos Itens</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Como Alugar</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Dicas De Segurança</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Seguro</a></li>
             </ul>
           </div>
 
           <div>
-            <h4 className="font-semibold text-foreground mb-4">For Owners</h4>
+            <h4 className="font-semibold text-foreground mb-4">Para Proprietários(as)</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">List Your Items</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Pricing Guide</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Owner Protection</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Success Stories</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Liste Seus Itens</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Guia de Precificação</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Proteção aos(às) Proprietários(as)</a></li>
+              <li><a href="#" className="hover:text-primary transition-colors">Histórias de Sucesso</a></li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © 2024 SCRAP. All rights reserved.
+            © 2025 SCRAP. Todos os direitos reservados.
           </p>
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-primary transition-colors">Support</a>
+            <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
+            <a href="#" className="hover:text-primary transition-colors">Termos do Serviço</a>
+            <a href="#" className="hover:text-primary transition-colors">Suporte</a>
           </div>
         </div>
 
         <div className="text-center mt-8 pt-8 border-t border-border">
           <p className="text-muted-foreground text-sm flex items-center justify-center space-x-1">
-            <span>Made with</span>
+            <span>Feito com</span>
             <Heart className="h-4 w-4 text-red-500 fill-current" />
-            <span>for a sustainable future</span>
+            <span>para um futuro sustentável.</span>
           </p>
         </div>
       </div>

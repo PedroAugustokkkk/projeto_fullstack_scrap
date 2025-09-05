@@ -9,75 +9,75 @@ const FeaturedItems = () => {
   const featuredItems = [
     {
       id: 1,
-      title: "Professional Camera Kit",
-      price: "$45",
-      period: "per day",
+      title: "Kit Profissional de Câmera",
+      price: "R$45",
+      period: "por dia",
       rating: 4.9,
       reviews: 127,
-      location: "Brooklyn, NY",
+      location: "Salvador, BA",
       image: cameraKit,
-      owner: "Sarah M.",
-      category: "Photography"
+      owner: "Sara M.",
+      category: "Fotografia"
     },
     {
       id: 2,
-      title: "Camping Tent (4-Person)",
-      price: "$25",
-      period: "per day",
+      title: "Barraca de Camping (para 4 pessoas)",
+      price: "R$25",
+      period: "por dia",
       rating: 4.8,
       reviews: 89,
-      location: "Portland, OR",
+      location: "São Paulo, SP",
       image: campingTent,
-      owner: "Mike J.",
-      category: "Outdoor"
+      owner: "Miguel T.",
+      category: "Ar-Livre"
     },
     {
       id: 3,
-      title: "Electric Drill Set",
-      price: "$15",
-      period: "per day",
+      title: "Kit Furadeira Elétrica",
+      price: "R$15",
+      period: "por dia",
       rating: 4.7,
       reviews: 156,
-      location: "Austin, TX",
+      location: "Belo Horizonte, BH",
       image: drillSet,
-      owner: "David L.",
-      category: "Tools"
+      owner: "Davi L.",
+      category: "Ferramentas"
     },
     {
       id: 4,
-      title: "DJ Equipment Package",
-      price: "$120",
-      period: "per day",
+      title: "Pacote de Equipamentos de DJ",
+      price: "R$120",
+      period: "por dia",
       rating: 5.0,
       reviews: 45,
-      location: "Miami, FL",
+      location: "Rio de Janeiro, RJ",
       image: "/placeholder.svg",
       owner: "Elena R.",
-      category: "Party"
+      category: "Festa"
     },
     {
       id: 5,
-      title: "Mountain Bike",
-      price: "$35",
-      period: "per day",
+      title: "Bicicleta de Trilha",
+      price: "R$35",
+      period: "por dia",
       rating: 4.6,
       reviews: 78,
-      location: "Denver, CO",
+      location: "Florianópolis, SC",
       image: "/placeholder.svg",
-      owner: "Tom H.",
-      category: "Sports"
+      owner: "José H.",
+      category: "Esportes"
     },
     {
       id: 6,
-      title: "Projector & Screen",
-      price: "$40",
-      period: "per day",
+      title: "Datashow (Projetos)",
+      price: "R$40",
+      period: "por dia",
       rating: 4.9,
       reviews: 112,
-      location: "Seattle, WA",
+      location: "Fortaleza, CE",
       image: "/placeholder.svg",
       owner: "Lisa K.",
-      category: "Electronics"
+      category: "Eletrônicos"
     }
   ];
 
@@ -87,10 +87,10 @@ const FeaturedItems = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-            Featured Items
+            Itens Disponíveis
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Discover amazing items available for rent from people in your community
+            Descubra itens incríveis para alugar perto de você. Compartilhe, economize e viva mais com SCRAP.
           </p>
         </div>
 
@@ -139,7 +139,7 @@ const FeaturedItems = () => {
                     <Star className="h-4 w-4 fill-yellow-400 text-yellow-400" />
                     <span className="font-medium text-sm">{item.rating}</span>
                   </div>
-                  <span className="text-muted-foreground text-sm">({item.reviews} reviews)</span>
+                  <span className="text-muted-foreground text-sm">({item.reviews} avaliações)</span>
                 </div>
 
                 {/* Location & Owner */}
@@ -148,12 +148,12 @@ const FeaturedItems = () => {
                     <MapPin className="h-4 w-4" />
                     <span>{item.location}</span>
                   </div>
-                  <span>by {item.owner}</span>
+                  <span>por {item.owner}</span>
                 </div>
 
                 {/* Action Button */}
                 <Button className="w-full btn-hero">
-                  Rent Now
+                  Alugue Agora
                 </Button>
               </div>
             </Card>
@@ -163,7 +163,7 @@ const FeaturedItems = () => {
         {/* View More Button */}
         <div className="text-center mt-12">
           <Button variant="outline" size="lg" className="px-8 py-3 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-            View All Items
+            Veja Todos Os Itens
           </Button>
         </div>
       </div>
