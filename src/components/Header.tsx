@@ -1,20 +1,23 @@
 import { Search, Menu, User, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/80 backdrop-blur-sm">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-primary rounded-full flex items-center justify-center">
               <span className="text-white font-bold text-sm">S</span>
             </div>
             <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
               SCRAP
             </span>
-          </div>
+          </Link>
 
           {/* Search Bar */}
           <div className="hidden md:flex flex-1 max-w-md mx-8">
@@ -23,16 +26,18 @@ const Header = () => {
               <input
                 type="text"
                 placeholder="Procure por itens para alugar... "
-                className="w-full pl-10 pr-4 py-2 border border-border rounded-full bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all"
+                className="w-full pl-10 pr-4 py-2 border border-border rounded-full bg-background/50 backdrop-blur-sm focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all cursor-pointer"
+                onClick={() => navigate('/search')}
+                readOnly
               />
             </div>
           </div>
 
           {/* Navigation */}
           <nav className="hidden lg:flex items-center space-x-6">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Alugar</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Categorias</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Como funciona</a>
+            <Link to="/rent" className="text-foreground hover:text-primary transition-colors">Alugar</Link>
+            <Link to="/categories" className="text-foreground hover:text-primary transition-colors">Categorias</Link>
+            <Link to="/how-it-works" className="text-foreground hover:text-primary transition-colors">Como funciona</Link>
           </nav>
 
           {/* Actions */}
@@ -43,7 +48,7 @@ const Header = () => {
             <Button variant="ghost" size="icon" className="hover:bg-accent/20">
               <User className="h-5 w-5" />
             </Button>
-            <Button className="btn-hero hidden md:inline-flex">
+            <Button className="btn-hero hidden md:inline-flex" onClick={() => navigate('/get-started')}>
               Começe a alugar
             </Button>
             <Button variant="ghost" size="icon" className="lg:hidden">
