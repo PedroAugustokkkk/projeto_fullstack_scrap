@@ -1,4 +1,5 @@
 import { Heart, Instagram, Twitter, Facebook } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -35,20 +36,20 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-foreground mb-4">Para Locatários(as)</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Navegue Pelos Itens</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Como Alugar</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Dicas De Segurança</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Seguro</a></li>
+              <li><Link to="/search" className="hover:text-primary transition-colors">Navegue Pelos Itens</Link></li>
+              <li><Link to="/how-to-rent" className="hover:text-primary transition-colors">Como Alugar</Link></li>
+              <li><Link to="/safety-tips" className="hover:text-primary transition-colors">Dicas De Segurança</Link></li>
+              <li><Link to="/insurance" className="hover:text-primary transition-colors">Seguro</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-foreground mb-4">Para Proprietários(as)</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li><a href="#" className="hover:text-primary transition-colors">Liste Seus Itens</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Guia de Precificação</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Proteção aos(às) Proprietários(as)</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Histórias de Sucesso</a></li>
+              <li><Link to="/list-items" className="hover:text-primary transition-colors">Liste Seus Itens</Link></li>
+              <li><Link to="/pricing-guide" className="hover:text-primary transition-colors">Guia de Precificação</Link></li>
+              <li><Link to="/owner-protection" className="hover:text-primary transition-colors">Proteção aos(às) Proprietários(as)</Link></li>
+              <li><Link to="/success-stories" className="hover:text-primary transition-colors">Histórias de Sucesso</Link></li>
             </ul>
           </div>
         </div>
@@ -58,9 +59,9 @@ const Footer = () => {
             © 2025 SCRAP. Todos os direitos reservados.
           </p>
           <div className="flex items-center space-x-4 text-sm text-muted-foreground">
-            <a href="#" className="hover:text-primary transition-colors">Política de Privacidade</a>
-            <a href="#" className="hover:text-primary transition-colors">Termos do Serviço</a>
-            <a href="#" className="hover:text-primary transition-colors">Suporte</a>
+            <Link to="/privacy-policy" className="hover:text-primary transition-colors">Política de Privacidade</Link>
+            <Link to="/terms-of-service" className="hover:text-primary transition-colors">Termos do Serviço</Link>
+            <Link to="/support" className="hover:text-primary transition-colors">Suporte</Link>
           </div>
         </div>
 

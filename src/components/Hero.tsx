@@ -1,5 +1,6 @@
 import { ArrowRight, Sparkles, Zap } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -41,12 +42,14 @@ const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-up" style={{ animationDelay: '0.4s' }}>
-            <Button className="btn-hero text-lg px-8 py-4 h-auto">
-              Começe a Alugar
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild className="btn-hero text-lg px-8 py-4 h-auto">
+              <Link to="/get-started">
+                Começe a Alugar
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
-            <Button className="btn-secondary-hero text-lg px-8 py-4 h-auto">
-              Liste Os Seus Itens
+            <Button asChild className="btn-secondary-hero text-lg px-8 py-4 h-auto">
+              <Link to="/list-items">Liste Os Seus Itens</Link>
             </Button>
           </div>
 

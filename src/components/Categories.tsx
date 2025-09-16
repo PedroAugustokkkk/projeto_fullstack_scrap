@@ -1,5 +1,6 @@
 import { Camera, Wrench, Tent, Music, Bike, Laptop, Car, Home } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { Link } from "react-router-dom";
 
 const Categories = () => {
   const categories = [
@@ -7,49 +8,57 @@ const Categories = () => {
       icon: Camera,
       name: "Fotografia",
       count: "1 item",
-      color: "from-bright-blue to-light-blue"
+      color: "from-bright-blue to-light-blue",
+      slug: "photography"
     },
     {
       icon: Wrench,
       name: "Ferramentas e Equipamentos",
       count: "1 item",
-      color: "from-burgundy to-blue-gray"
+      color: "from-burgundy to-blue-gray",
+      slug: "tools"
     },
     {
       icon: Tent,
       name: "Ar-Livre e Acampamento",
       count: "1 item",
-      color: "from-light-blue to-bright-blue"
+      color: "from-light-blue to-bright-blue",
+      slug: "camping"
     },
     {
       icon: Music,
       name: "Festa & Eventos",
       count: "1 item",
-      color: "from-warm-cream to-burgundy"
+      color: "from-warm-cream to-burgundy",
+      slug: "events"
     },
     {
       icon: Bike,
       name: "Esportes e Recreação",
       count: "1 item",
-      color: "from-bright-blue to-warm-cream"
+      color: "from-bright-blue to-warm-cream",
+      slug: "sports"
     },
     {
       icon: Laptop,
       name: "Eletrônicos",
       count: "1 item",
-      color: "from-burgundy to-light-blue"
+      color: "from-burgundy to-light-blue",
+      slug: "electronics"
     },
     {
       icon: Car,
       name: "Veículos",
       count: "1 item",
-      color: "from-light-blue to-warm-cream"
+      color: "from-light-blue to-warm-cream",
+      slug: "vehicles"
     },
     {
       icon: Home,
       name: "Casa e Jardim",
       count: "1 item",
-      color: "from-warm-cream to-bright-blue"
+      color: "from-warm-cream to-bright-blue",
+      slug: "home"
     }
   ];
 
@@ -71,17 +80,21 @@ const Categories = () => {
           {categories.map((category, index) => {
             const IconComponent = category.icon;
             return (
-              <Card 
+              <Link 
                 key={category.name}
-                className="card-hover bg-card border-0 p-6 text-center cursor-pointer group animate-bounce-in"
-                style={{ animationDelay: `${index * 0.1}s` }}
+                to={`/category/${category.slug}`}
               >
-                <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
-                  <IconComponent className="h-8 w-8 text-white" />
-                </div>
-                <h3 className="font-semibold text-card-foreground mb-2">{category.name}</h3>
-                <p className="text-sm text-muted-foreground">{category.count}</p>
-              </Card>
+                <Card 
+                  className="card-hover bg-card border-0 p-6 text-center cursor-pointer group animate-bounce-in"
+                  style={{ animationDelay: `${index * 0.1}s` }}
+                >
+                  <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${category.color} flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
+                    <IconComponent className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="font-semibold text-card-foreground mb-2">{category.name}</h3>
+                  <p className="text-sm text-muted-foreground">{category.count}</p>
+                </Card>
+              </Link>
             );
           })}
         </div>
@@ -95,9 +108,12 @@ const Categories = () => {
             <p className="text-lg mb-6 opacity-90">
               Publique uma solicitação e deixe a comunidade ajudar você a encontrar o item perfeito.
             </p>
-            <button className="bg-white text-primary font-semibold px-8 py-3 rounded-full hover:bg-white/90 transition-colors">
+            <Link 
+              to="/post-request"
+              className="bg-white text-primary font-semibold px-8 py-3 rounded-full hover:bg-white/90 transition-colors inline-block"
+            >
               Poste Um Pedido
-            </button>
+            </Link>
           </div>
         </div>
       </div>
