@@ -1,0 +1,19 @@
+{
+  // Opções do compilador
+  "compilerOptions": {
+    // Define o módulo de destino como CommonJS, padrão no Node.js
+    "module": "commonjs",
+    // Define a versão do ECMAScript de destino
+    "target": "es6",
+    // Gera arquivos de mapa de origem para depuração
+    "sourceMap": true,
+    // Diretório de saída para os arquivos compilados
+    "outDir": "./dist",
+    // Diretório raiz dos arquivos de origem
+    "rootDir": "./src",
+    // Habilita a verificação estrita de tipos
+    "strict": true,
+    // Permite interoperabilidade com módulos CommonJS
+    "esModuleInterop": true
+  }
+}
