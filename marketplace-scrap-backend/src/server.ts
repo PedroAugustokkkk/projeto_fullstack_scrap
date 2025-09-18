@@ -5,6 +5,8 @@ import { config } from 'dotenv';
 // Importa as rotas de autenticação que criamos
 import authRoutes from './routes/authRoutes';
 
+import userRoutes from './routes/userRoutes';
+
 // Executa a configuração do dotenv para carregar o arquivo .env
 config();
 
@@ -24,4 +26,5 @@ app.use('/api/auth', authRoutes);
 app.listen(PORT, () => {
   // Exibe uma mensagem no console quando o servidor estiver rodando
   console.log(`Servidor rodando na porta ${PORT}`);
+app.use('/api/users', userRoutes); // Rotas protegidas
 });
